@@ -77,9 +77,8 @@ endfunction
 
 
 " Spawn in current buffer
-function! longcat#spawn(is_tatoo, ...) abort
-  let l:n = get(a:, 1, 20)
-  call append(line('.'), longcat#breed(a:is_tatoo, l:n))
+function! longcat#spawn(is_tatoo, n) abort
+  call append(line('.'), longcat#breed(a:is_tatoo, a:n))
 endfunction
 
 
