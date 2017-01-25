@@ -1,0 +1,94 @@
+*longcat.txt*	Generate long cat.
+
+Version: 0.1.0
+Author: anekos <is-anekos-long-cat@snca.net>
+
+==============================================================================
+CONTENTS					*longcat-contents*
+
+INTRODUCTION			|longcat-introduction|
+INTERFACE			|longcat-interface|
+  COMMANDS			  |longcat-commands|
+  FUNCTIONS			  |longcat-functions|
+KNOWN ISSUES			|longcat-known-issues|
+
+
+==============================================================================
+INTRODUCTION					*longcat-introduction*
+
+    /\___/\
+   /       \
+  |  o    o |
+  \     #   |
+   \   _|_ /
+   /       \______
+  / _______ ___   \
+  |_____   \   \__/
+   |    \__/
+   |   L   |
+   |   o   |
+   |   n   |
+   |   g   |
+   |       |
+   |   c   |
+   |   a   |
+   |   t   |
+   |       |
+   |   i   |
+   |   s   |
+   |       |
+   |   l   |
+   |   o   |
+   |   n   |
+   |   g   |
+   |   .   |
+   /        \
+  /   ____   \
+  |  /    \  |
+  | |      | |
+ /  |      |  \
+ \__/      \__/
+
+						*longcat-synopsis*
+>
+" Generate standard long cat
+	:LongCat
+
+	" Generate 200 long cat
+	:LongCat 200
+
+	" Generate long cat with tatoo
+	:LongCat Everybody wants to be a cat
+<
+
+
+==============================================================================
+INTERFACE					*longcat-interface*
+
+------------------------------------------------------------------------------
+COMMANDS					*longcat-commands*
+
+						*:LongCat*
+:LongCat [{length}]
+	Generate {length} long cat.
+
+						*:LongCat!*
+:LongCat! {tatoo-message}
+	Generate long cat with {tatoo-message}.
+
+
+------------------------------------------------------------------------------
+FUNCTIONS					*longcat-functions*
+
+longcat#spawn({is_tatoo}, {n})			*longcat#spawn()*
+	A function version of |:LongCat|.
+
+
+==============================================================================
+KNOWN ISSUES					*longcat-known-issues*
+
+- Short cat is not long.
+
+
+==============================================================================
+vim:tw=78:fo=tcq2mM:ts=8:ft=help:norl
